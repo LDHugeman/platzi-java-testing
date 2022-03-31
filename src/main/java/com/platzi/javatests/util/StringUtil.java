@@ -3,11 +3,14 @@ package com.platzi.javatests.util;
 public class StringUtil {
 
     public static String repeat(String string, int times){
-        StringBuilder result = new StringBuilder();
+        String result = "";
+        if(times<0){
+            throw new IllegalArgumentException("negative times not allowed");
+        }
 
         for (int i = 0; i < times; i++) {
-            result.append(string);
+            result+= string;
         }
-        return result.toString();
+        return result;
     }
 }
