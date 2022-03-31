@@ -24,6 +24,4 @@ public class StringUtilTest {
     public void test_repeat_negative_times(){
         StringUtil.repeat("hola",-1);
     }
-
-
 }
